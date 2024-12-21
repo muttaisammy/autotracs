@@ -21,27 +21,26 @@ if(isset($_POST['add']))
 	$stype=$_POST['stype'];
 	$price=$_POST['price'];
 	$city=$_POST['city'];
-
 	$state=$_POST['state'];
 	$status=$_POST['status'];
 	$uid=$_SESSION['uid'];
 	
 	
 	$aimage=$_FILES['aimage']['name'];
-	$aimage1=$_FILES['aimage1']['name'];
+	
 	
 	
 	$temp_name  =$_FILES['aimage']['tmp_name'];
-	$temp_name1 =$_FILES['aimage1']['tmp_name'];
+	
 	
 	
 	move_uploaded_file($temp_name,"admin/property/$aimage");
-	move_uploaded_file($temp_name1,"admin/property/$aimage1");
 	
 	
-	$sql="insert into property (title,pcontent,type,stype,price,city,state,pimage,pimage1,uid,status)
+	
+	$sql="insert into property (title,pcontent,type,stype,price,city,state,pimage,uid,status)
 	values('$title','$content','$ptype','$stype','$price',
-	'$city','$state','$aimage','$aimage1','$uid','$status')";
+	'$city','$state','$aimage','$uid','$status')";
 	$result=mysqli_query($con,$sql);
 	if($result)
 		{
@@ -135,8 +134,7 @@ if(isset($_POST['add']))
 									<h5 class="text-secondary">Basic Information</h5><hr>
 									<?php echo $error; ?>
 									<?php echo $msg; ?>
-									
-										<div class="row">
+									<div class="row">
 											<div class="col-xl-12">
 												<div class="form-group row">
 													<label class="col-lg-2 col-form-label">Title</label>
@@ -150,8 +148,7 @@ if(isset($_POST['add']))
 														<textarea class="tinymce form-control" name="content" rows="10" cols="30"></textarea>
 													</div>
 												</div>
-												
-											</div>
+												</div>
 											<div class="col-xl-6">
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Asset Type</label>
@@ -162,8 +159,7 @@ if(isset($_POST['add']))
 															<option value="Tractor">Tractors</option>
 															<option value="bunglow">Implements</option>
 															<option value="Spares">Spares</option>
-															
-														</select>
+															</select>
 													</div>
 												</div>
 												<div class="form-group row">
@@ -176,11 +172,7 @@ if(isset($_POST['add']))
 														</select>
 													</div>
 												</div>
-											
-												
-											</div>   
-										
-										
+										</div>   									
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Price</label>
 													<div class="col-lg-9">
@@ -199,13 +191,7 @@ if(isset($_POST['add']))
 														<input type="text" class="form-control" name="state" required placeholder="Enter State">
 													</div>
 												</div>
-											</div>
-											
-												
-											
-										
-									
-												
+											</div>		
 										<div class="row">
 											<div class="col-xl-6">
 												
@@ -226,31 +212,12 @@ if(isset($_POST['add']))
 														</select>
 													</div>
 												</div>
-												<div class="form-group row">
-													
-													<div class="col-lg-9">
-														<input class="form-control" name="fimage1" type="file">
-													</div>
 												</div>
-											</div>
 											<div class="col-xl-6">
-												
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Image 1</label>
-													<div class="col-lg-9">
-														<input class="form-control" name="aimage1" type="file" required="">
-													</div>
-												</div>
-												
-												
-												
-											</div>
-										</div>
-
-										
-											<input type="submit" value="Submit" class="btn btn-primary"name="add" style="margin-left:200px;">
-										
 								</div>
+										</div>
+										<input type="submit" value="Submit" class="btn btn-primary"name="add" style="margin-left:200px;">
+										</div>
 								</form>
                     </div>            
             </div>

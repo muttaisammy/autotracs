@@ -33,19 +33,19 @@ if(isset($_POST['add']))
 	
 	
 	$aimage=$_FILES['aimage']['name'];
-	$aimage1=$_FILES['aimage1']['name'];
+	
 	
 	
 	$temp_name  =$_FILES['aimage']['tmp_name'];
-	$temp_name1 =$_FILES['aimage1']['tmp_name'];
+	
 	
 	move_uploaded_file($temp_name,"property/$aimage");
-	move_uploaded_file($temp_name1,"property/$aimage1");
 	
 	
-	$sql="insert into property (title,pcontent,type,stype.price,location,city,state,pimage,pimage1,uid,status,totalfloor)
+	
+	$sql="insert into property (title,pcontent,type,stype.price,location,city,state,pimage,uid,status,totalfloor)
 	values('$title','$content','$ptype','$stype','$price',
-	'$loc','$city','$state','$aimage','$aimage1','$uid','$status')";
+	'$loc','$city','$state','$aimage','$uid','$status')";
 	$result=mysqli_query($con,$sql);
 	if($result)
 		{
@@ -220,12 +220,7 @@ if(isset($_POST['add']))
 												
 											<div class="col-xl-6">
 												
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Image 1</label>
-													<div class="col-lg-9">
-														<input class="form-control" name="aimage1" type="file" required="">
-													</div>
-												</div>
+												
 												
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Uid</label>

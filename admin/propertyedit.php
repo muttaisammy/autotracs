@@ -33,19 +33,19 @@ if(isset($_POST['add']))
 	
 	
 	$aimage=$_FILES['aimage']['name'];
-	$aimage1=$_FILES['aimage1']['name'];
+	
 	
 	
 	$temp_name  =$_FILES['aimage']['tmp_name'];
-	$temp_name1 =$_FILES['aimage1']['tmp_name'];
+	
 	
 	
 	move_uploaded_file($temp_name,"property/$aimage");
-	move_uploaded_file($temp_name1,"property/$aimage1");
+	
 
 	
 	$sql = "UPDATE property SET title= '{$title}', pcontent= '{$content}', type='{$ptype}', stype='{$stype}', price='{$price}', location='{$loc}', city='{$city}', state='{$state}', feature='{$feature}',
-	pimage='{$aimage}', pimage1='{$aimage1}', 
+	pimage='{$aimage}', 
 	uid='{$uid}', status='{$status}' WHERE pid = {$pid}";
 	
 	$result=mysqli_query($con,$sql);
@@ -281,13 +281,6 @@ if(isset($_POST['add']))
 											</div>
 											<div class="col-xl-6">
 												
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Image 1</label>
-													<div class="col-lg-9">
-														<input class="form-control" name="aimage1" type="file" required="">
-														<img src="property/<?php echo $row['19'];?>" alt="pimage" height="150" width="180">
-													</div>
-												</div>
 												
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Uid</label>

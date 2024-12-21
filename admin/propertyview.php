@@ -97,7 +97,7 @@ if(!isset($_SESSION['auser']))
                                                     <th>City</th>
                                                     <th>State</th>
                                                     <th>Image</th>
-													<th>Image1</th>
+													
                                                     <
                                                     <th>Uid</th>
 													<th>Status</th>

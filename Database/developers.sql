@@ -43,7 +43,7 @@ CREATE TABLE `about` (
 --
 
 INSERT INTO `about` (`id`, `title`, `content`, `image`) VALUES
-(10, 'About Our Company', '<div id=\"pgc-w5d0dcc3394ac1-0-0\" class=\"panel-grid-cell\">\r\n<div id=\"panel-w5d0dcc3394ac1-0-0-0\" class=\"so-panel widget widget_sow-editor panel-first-child panel-last-child\" data-index=\"0\">\r\n<div class=\"so-widget-sow-editor so-widget-sow-editor-base\">\r\n<div class=\"siteorigin-widget-tinymce textwidget\">\r\n<p class=\"text_all_p_tag_css\"> </p>\r\n<p class=\"text_all_p_tag_css\"> </p>\r\n<div id=\"pgc-w5d0dcc3394ac1-0-0\" class=\"panel-grid-cell\">\r\n<div id=\"panel-w5d0dcc3394ac1-0-0-0\" class=\"so-panel widget widget_sow-editor panel-first-child panel-last-child\" data-index=\"0\">\r\n<div class=\"so-widget-sow-editor so-widget-sow-editor-base\">\r\n<div class=\"siteorigin-widget-tinymce textwidget\">\r\n<p class=\"text_all_p_tag_css\"></p>\r\n<p class=\"text_all_p_tag_css\">We are an Assets Listing company in Kenya. List all types assets cars, tractors, implements etc for Sale, Lease & Rent </p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>', 'haddyliving1.jpg');
+(10, 'About Our Company', 'We are an establised company that deals in Sales, of Cars, Trucks, Tractors, Implements & Spares', 'haddyliving1.jpg');
 
 -- --------------------------------------------------------
 
@@ -160,7 +160,7 @@ CREATE TABLE `property` (
   `state` varchar(100) NOT NULL,
 
   `pimage` varchar(300) NOT NULL,
-  `pimage1` varchar(300) NOT NULL,
+ 
  
   `uid` int(50) NOT NULL,
   `status` varchar(50) NOT NULL,
