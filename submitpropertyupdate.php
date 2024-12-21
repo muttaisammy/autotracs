@@ -167,12 +167,12 @@ if(isset($_POST['add']))
 											</div>
 											<div class="col-xl-6">
 												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Property Type</label>
+													<label class="col-lg-3 col-form-label">Asset Type</label>
 													<div class="col-lg-9">
 														<select class="form-control" required name="ptype">
 															<option value="">Select Type</option>
-															<option value="appartment">AutoTruck</option>
-															<option value="Tractor">Tractor</option>
+															<option value="appartment">AutoTrucks</option>
+															<option value="Tractor">Tractors</option>
 															<option value="bunglow">Implements</option>
 															<option value="Spares">Spares</option>
 															

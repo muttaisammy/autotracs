@@ -139,7 +139,7 @@ include("config.php");
                                         <tr>
                                             <td> :</td>
                                             <td class="text-capitalize"><?php echo $row['4'];?></td>
-                                            <td>Property Type :</td>
+                                            <td>Asset Type :</td>
                                             <td class="text-capitalize"><?php echo $row['3'];?></td>
                                         </tr>
                                         <tr>

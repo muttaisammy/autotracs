@@ -59,10 +59,10 @@ if(!isset($_SESSION['auser']))
 					<div class="page-header">
 						<div class="row">
 							<div class="col">
-								<h3 class="page-title">Property</h3>
+								<h3 class="page-title">Assets</h3>
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-									<li class="breadcrumb-item active">Property</li>
+									<li class="breadcrumb-item active">Assets</li>
 								</ul>
 							</div>
 						</div>
@@ -77,7 +77,7 @@ if(!isset($_SESSION['auser']))
                                 <div class="card">
                                     <div class="card-body">
 
-                                        <h4 class="header-title mt-0 mb-4">Property View</h4>
+                                        <h4 class="header-title mt-0 mb-4">Asset View</h4>
 										<?php 
 											if(isset($_GET['msg']))	
 											echo $_GET['msg'];	
@@ -89,38 +89,19 @@ if(!isset($_SESSION['auser']))
                                                     <th>Title</th>
                                                     <th>Description</th>
                                                     <th>Type</th>
-                                                    <th>BHK</th>
+                                                    
                                                     <th>Selling Type</th>
-													<th>Bedroom</th>
-                                                    <th>Bathroom</th>
-                                                    <th>Balcony</th>
-                                                    <th>Kitchen</th>
-                                                    <th>Hall</th>
-                                                    <th>Floor</th>
-													<th>Area Size</th>
+													
                                                     <th>Price</th>
                                                     <th>Location</th>
                                                     <th>City</th>
                                                     <th>State</th>
-                                                    <th>Feature</th>
+                                                    <th>Image</th>
 													<th>Image1</th>
-<<<<<<< HEAD
-                                                    
+                                                    <
                                                     <th>Uid</th>
 													<th>Status</th>
                                                     
-=======
-                                                    <th>Image2</th>
-                                                    <th>Image3</th>
-                                                    <th>Image4</th>
-                                                    <th>Image5</th>
-                                                    <th>Uid</th>
-													<th>Status</th>
-                                                    <th>Floor Plan</th>
-                                                    <th>Basement Plan</th>
-													<th>Ground Floor Plan</th>
->>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
-                                                    <th>Total Floor</th>
                                                     <th>Date</th>
                                                     <th>Edit</th>
                                                     <th>Delete</th>

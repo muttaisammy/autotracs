@@ -121,16 +121,16 @@ if(!isset($_SESSION['uemail']))
 									<img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
                                     <div class="property-info d-table">
                                         <h5 class="text-secondary text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
-                                        <span class="font-14 text-capitalize"><i class="fas fa-map-marker-alt text-primary font-13"></i>&nbsp; <?php echo $row['14'];?></span>
+                                        <span class="font-14 text-capitalize"><i class="fas fa-map-marker-alt text-primary font-13"></i>&nbsp; <?php echo $row['9'];?></span>
                                         <div class="price mt-3">
-											<span class="text-primary">$&nbsp;<?php echo $row['13'];?></span>
+											<span class="text-primary">$&nbsp;<?php echo $row['10'];?></span>
 										</div>
                                     </div>
 								</td>
                                 <td><?php echo $row['4'];?></td>
                                 <td class="text-capitalize">For <?php echo $row['5'];?></td>
-                                <td><?php echo $row['29'];?></td>
-								<td class="text-capitalize"><?php echo $row['24'];?></td>
+                                <td><?php echo $row['13'];?></td>
+								<td class="text-capitalize"><?php echo $row['12'];?></td>
                                 <td><a class="btn btn-primary" href="submitpropertyupdate.php?id=<?php echo $row['0'];?>">Update</a></td>
 								<td><a class="btn btn-primary" href="submitpropertydelete.php?id=<?php echo $row['0'];?>">Delete</a></td>
                             </tr>

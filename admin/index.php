@@ -37,7 +37,7 @@ include("config.php");
 
 <!--	Title
 	=========================================================-->
-<title>Kenya Real Estate</title>
+<title>Kenya AutoTrucks Sales</title>
 </head>
 <body>
 
@@ -58,7 +58,7 @@ include("config.php");
         <!--	Header end  -->
 		
         <!--	Banner Start   -->
-        <div class="overlay-black w-100 slider-banner1 position-relative" style="background-image: url('images/banner/mainpic.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+        <div class="overlay-black w-100 slider-banner1 position-relative" style="background-image: url('images/banner/vigo.png'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-lg-12">
@@ -71,10 +71,10 @@ include("config.php");
                                         <div class="form-group">
                                             <select class="form-control" name="type">
                                                 <option value="">Select Asset Type</option>
-												<option value="appartment">AutoTruck</option>
-												<option value="flat">Tractor</option>
+												<option value="appartment">AutoTrucks</option>
+												<option value="flat">Tractors</option>
 												<option value="bunglow">Implements</option>
-												<option value="Spares">Spare</option>
+												<option value="Spares">Spares</option>
 												
                                             </select>
                                         </div>
@@ -121,14 +121,14 @@ include("config.php");
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
 								<i class="flaticon-rent text-primary flat-medium" aria-hidden="true"></i>
-                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">For Sale</a></h5>
+                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Are you Selling?</a></h5>
                                 <p></p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
 								<i class="flaticon-for-rent text-primary flat-medium" aria-hidden="true"></i>
-                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">For Purchase</a></h5>
+                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Are you Buying?</a></h5>
                                 <p></p>
                             </div>
                         </div>
@@ -200,7 +200,7 @@ include("config.php");
                                                 </div>
                                                 <div class="p-4 d-inline-block w-100">
                                                     <div class="float-left text-capitalize"><i class="fas fa-user text-primary mr-1"></i>By : <?php echo $row['uname'];?></div>
-                                                    <div class="float-right"><i class="far fa-calendar-alt text-primary mr-1"></i> 6 Months Ago</div>
+                                                    <div class="float-right"><i class="far fa-calendar-alt text-primary mr-1"></i> 1 Months Ago</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -269,7 +269,7 @@ include("config.php");
                         <div class="icon-thumb-one text-center mb-5">
                             <div class="bg-primary text-white rounded-circle position-absolute z-index-9">1</div>
                             <div class="left-arrow"><i class="flaticon-investor flat-medium icon-primary" aria-hidden="true"></i></div>
-                            <h5 class="text-secondary mt-5 mb-4">Discussion with us</h5>
+                            <h5 class="text-secondary mt-5 mb-4">Discuss with us</h5>
                             <p>Call Us</p>
                         </div>
                     </div>
@@ -312,7 +312,7 @@ include("config.php");
 												$total = $row[0];
 												echo $total;?>">0</div>
 								<?php } ?>
-                                <div class="text-white h5">Property Listings</div>
+                                <div class="text-white h5">Asset Listings</div>
                             </div>
                         </div>
 						<div class="col-md-3">
@@ -340,7 +340,7 @@ include("config.php");
 												$total = $row[0];
 												echo $total;?>">0</div>
 								<?php } ?>
-                                <div class="text-white h5">Assets for Hire</div>
+                                <div class="text-white h5">Assets for Purchase</div>
                             </div>
                         </div>
                         <div class="col-md-3">

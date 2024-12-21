@@ -18,19 +18,14 @@ if(isset($_POST['add']))
 	$title=$_POST['title'];
 	$content=$_POST['content'];
 	$ptype=$_POST['ptype'];
-	
 	$stype=$_POST['stype'];
-	
 	$price=$_POST['price'];
 	$city=$_POST['city'];
-	
-	$loc=$_POST['loc'];
+
 	$state=$_POST['state'];
 	$status=$_POST['status'];
 	$uid=$_SESSION['uid'];
 	
-	
-	$totalfloor=$_POST['totalfl'];
 	
 	$aimage=$_FILES['aimage']['name'];
 	$aimage1=$_FILES['aimage1']['name'];
@@ -44,9 +39,9 @@ if(isset($_POST['add']))
 	move_uploaded_file($temp_name1,"admin/property/$aimage1");
 	
 	
-	$sql="insert into property (title,pcontent,type,stype,price,location,city,state,pimage,pimage1,uid,status)
+	$sql="insert into property (title,pcontent,type,stype,price,city,state,pimage,pimage1,uid,status)
 	values('$title','$content','$ptype','$stype','$price',
-	'$loc','$city','$state','$aimage','$aimage1','$uid','$status')";
+	'$city','$state','$aimage','$aimage1','$uid','$status')";
 	$result=mysqli_query($con,$sql);
 	if($result)
 		{
@@ -159,12 +154,12 @@ if(isset($_POST['add']))
 											</div>
 											<div class="col-xl-6">
 												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Property Type</label>
+													<label class="col-lg-3 col-form-label">Asset Type</label>
 													<div class="col-lg-9">
 														<select class="form-control" required name="ptype">
 															<option value="">Select Type</option>
-															<option value="appartment">AutoTruck</option>
-															<option value="Tractor">Tractor</option>
+															<option value="appartment">AutoTrucks</option>
+															<option value="Tractor">Tractors</option>
 															<option value="bunglow">Implements</option>
 															<option value="Spares">Spares</option>
 															
@@ -185,7 +180,6 @@ if(isset($_POST['add']))
 												
 											</div>   
 										
-										<h5 class="text-secondary">Price & Location</h5><hr>
 										
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Price</label>
@@ -212,7 +206,6 @@ if(isset($_POST['add']))
 										
 									
 												
-										<h5 class="text-secondary">Image & Status</h5><hr>
 										<div class="row">
 											<div class="col-xl-6">
 												

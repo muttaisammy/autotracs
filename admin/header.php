@@ -13,17 +13,10 @@ if(!isset($_SESSION['auser']))
 				<!-- Logo -->
                 <div class="header-left">
                     <a href="dashboard.php" class="logo">
-<<<<<<< HEAD
-						<img src="images/logo4.png" alt="Logo">
-					</a>
-					<a href="dashboard.php" class="logo logo-small">
-						<img src="imagesg/logo4.png" alt="Logo" width="30" height="30">
-=======
 						<img src="assets/img/logo-white.png" alt="Logo">
 					</a>
 					<a href="dashboard.php" class="logo logo-small">
 						<img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
->>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
 					</a>
                 </div>
 				<!-- /Logo -->
