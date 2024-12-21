@@ -114,7 +114,7 @@ include("config.php");
                                 <span class="mb-sm-20 d-block text-capitalize"><i class="fas fa-map-marker-alt text-primary font-12"></i> &nbsp;<?php echo $row['14'];?></span>
 							</div>
                             <div class="col-md-6">
-                                <div class="text-primary text-left h5 my-2 text-md-right">kshs<?php echo $row['13'];?></div>
+                                <div class="text-primary text-left h5 my-2 text-md-right">kshs<?php echo $row['6'];?></div>
                                 <div class="text-left text-md-right">Price</div>
                             </div>
                         </div>
@@ -130,7 +130,7 @@ include("config.php");
                                 </ul>
                             </iv>
                             <h4 class="text-secondary my-4">Description</h4>
-                            <p><?php echo $row['2'];?></p>
+                            <p><?php echo $row['9'];?></p>
                             
                             <h5 class="mt-5 mb-4 text-secondary">Asset Summary</h5>
                             <div  class="table-striped font-14 pb-2">
@@ -146,7 +146,7 @@ include("config.php");
                                             <td> :</td>
                                             <td class="text-capitalize"><?php echo $row['11'];?></td>
                                             <td></td>
-                                            <td class="text-capitalize"><?php echo $row['28'];?></td>
+                                            <td class="text-capitalize"><?php echo $row['12'];?></td>
                                         </tr>
                                         <tr>
                                             <td>City :</td>
@@ -308,9 +308,9 @@ include("config.php");
 										while($row=mysqli_fetch_array($query))
 										{
 								?>
-                                <li> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
+                                <li> <img src="admin/property/<?php echo $row['9'];?>" alt="pimage">
                                     <h6 class="text-secondary hover-text-primary text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h6>
-                                    <span class="font-14"><i class="fas fa-map-marker-alt icon-primary icon-small"></i> <?php echo $row['14'];?></span>
+                                    <span class="font-14"><i class="fas fa-map-marker-alt icon-primary icon-small"></i> <?php echo $row['9'];?></span>
                                     
                                 </li>
                                 <?php } ?>

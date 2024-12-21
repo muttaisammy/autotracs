@@ -58,7 +58,7 @@ include("config.php");
         <!--	Header end  -->
 		
         <!--	Banner Start   -->
-        <div class="overlay-black w-100 slider-banner1 position-relative" style="background-image: url('images/banner/vigo.png'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+        <div class="overlay-black w-100 slider-banner1 position-relative" style="background-image: url('images/vigo.png'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-lg-12">
@@ -190,11 +190,11 @@ include("config.php");
                                                     <span class="location text-capitalize"><i class="fas fa-map-marker-alt text-primary"></i> <?php echo $row['14'];?></span> </div>
                                                 <div class="bg-gray quantity px-4 pt-4">
                                                     <ul>
-                                                        <li><span><?php echo $row['12'];?></span> Sqft</li>
-                                                        <li><span><?php echo $row['6'];?></span> Beds</li>
-                                                        <li><span><?php echo $row['7'];?></span> Baths</li>
-                                                        <li><span><?php echo $row['9'];?></span> Kitchen</li>
-                                                        <li><span><?php echo $row['8'];?></span> Balcony</li>
+                                                        <li><span><?php echo $row['10'];?></span>User </li>
+                                                        <li><span><?php echo $row['7'];?></span> City</li>
+                                                        <li><span><?php echo $row['8'];?></span> State</li>
+                                                        <li><span><?php echo $row['11'];?></span> Status</li>
+                                                        <li><span><?php echo $row['9'];?></span> Pic</li>
                                                         
                                                     </ul>
                                                 </div>
