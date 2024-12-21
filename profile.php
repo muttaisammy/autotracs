@@ -69,7 +69,7 @@ if(isset($_POST['insert']))
 
 <!--	Title
 	=========================================================-->
-<title>Kenya Real Estate</title>
+<title>Kenya AutoTrucks Sale</title>
 </head>
 <body>
 
@@ -133,11 +133,7 @@ if(isset($_POST['insert']))
                                 
                                 <div class="form-group">
                                     <label for="phone">Phone Number</label>
-<<<<<<< HEAD
-                                    <input type="text" name="phone"  class="form-control" placeholder="Enter Phone" maxlength="15">
-=======
                                     <input type="text" name="phone"  class="form-control" placeholder="Enter Phone" maxlength="10">
->>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
                                 </div>
 
                                 <div class="form-group">

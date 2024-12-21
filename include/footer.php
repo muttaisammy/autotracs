@@ -6,12 +6,8 @@
                             <div class="row">
                                 <div class="col-md-12 col-lg-4">
                                     <div class="footer-widget mb-4">
-<<<<<<< HEAD
-                                        <div class="footer-logo mb-4"> <a href="#"><img class="logo-bottom" src="images/logo4.png" alt="image"></a> </div>
-=======
                                         <div class="footer-logo mb-4"> <a href="#"><img class="logo-bottom" src="images/logo/logo-white.png" alt="image"></a> </div>
->>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
-                                        <p class="pb-20 text-white">Send us your property details</p>
+                                        <p class="pb-20 text-white">Send us your asset details</p>
 										            </div>
                                 </div>
                                 <div class="col-md-12 col-lg-8">
@@ -30,10 +26,10 @@
                                                 <h4 class="widget-title text-white double-down-line-left position-relative">Quick Links</h4>
                                                 <ul class="hover-text-primary">
                                                     <li><a href="#" class="text-white">About Us</a></li>
-                                                    <li><a href="#" class="text-white">Featured Property</a></li>
+                                                    <li><a href="#" class="text-white">Featured Asset</a></li>
                                                     <li><a href="#" class="text-white">Become A Member</a></li>
-                                                    <li><a href="#" class="text-white">Submit Property</a></li>
-                                                     <li><a href="#" class="text-white">Our Agents</a></li>
+                                                    <li><a href="#" class="text-white">Submit Asset</a></li>
+                                                     
                                                 </ul>
                                             </div>
                                         </div>

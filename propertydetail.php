@@ -40,20 +40,11 @@ include("config.php");
 
 <!--	Title
 	=========================================================-->
-<title>Kenya Real Estate</title>
+<title>Kenya AutoTrucks for Sale</title>
 </head>
 <body>
 
-<!--	Page Loader
-=============================================================
-<div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
-	<div class="d-flex justify-content-center y-middle position-relative">
-	  <div class="spinner-border" role="status">
-		<span class="sr-only">Loading...</span>
-	  </div>
-	</div>
-</div>
---> 
+
 
 
 <div id="page-wrapper">
@@ -67,13 +58,13 @@ include("config.php");
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h2 class="page-name float-left text-white text-uppercase mt-1 mb-0"><b>Property Detail</b></h2>
+                        <h2 class="page-name float-left text-white text-uppercase mt-1 mb-0"><b>Asset Detail</b></h2>
                     </div>
                     <div class="col-md-6">
                         <nav aria-label="breadcrumb" class="float-left float-md-right">
                             <ol class="breadcrumb bg-transparent m-0 p-0">
                                 <li class="breadcrumb-item text-white"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Property Detail</li>
+                                <li class="breadcrumb-item active">Asset Detail</li>
                             </ol>
                         </nav>
                     </div>
@@ -128,33 +119,33 @@ include("config.php");
                             </div>
                         </div>
                         <div class="property-details">
-                            <div class="bg-gray property-quantity px-4 pt-4 w-100">
+                            <iv class="bg-gray property-quantity px-4 pt-4 w-100">
                                 <ul>
-                                    <li><span class="text-secondary"><?php echo $row['12'];?></span> Sqft</li>
-                                    <li><span class="text-secondary"><?php echo $row['6'];?></span> Bedroom</li>
-                                    <li><span class="text-secondary"><?php echo $row['7'];?></span> Bathroom</li>
-                                    <li><span class="text-secondary"><?php echo $row['8'];?></span> Balcony</li>
-                                    <li><span class="text-secondary"><?php echo $row['10'];?></span> Hall</li>
-                                    <li><span class="text-secondary"><?php echo $row['9'];?></span> Kitchen</li>
+                                    <li><span class="text-secondary"><?php echo $row['12'];?></span> </li>
+                                    <li><span class="text-secondary"><?php echo $row['6'];?></span> </li>
+                                    <li><span class="text-secondary"><?php echo $row['7'];?></span> </li>
+                                    <li><span class="text-secondary"><?php echo $row['8'];?></span> </li>
+                                    <li><span class="text-secondary"><?php echo $row['10'];?></span> </li>
+                                    <li><span class="text-secondary"><?php echo $row['9'];?></span> </li>
                                 </ul>
-                            </div>
+                            </iv>
                             <h4 class="text-secondary my-4">Description</h4>
                             <p><?php echo $row['2'];?></p>
                             
-                            <h5 class="mt-5 mb-4 text-secondary">Property Summary</h5>
+                            <h5 class="mt-5 mb-4 text-secondary">Asset Summary</h5>
                             <div  class="table-striped font-14 pb-2">
                                 <table class="w-100">
                                     <tbody>
                                         <tr>
-                                            <td>BHK :</td>
+                                            <td> :</td>
                                             <td class="text-capitalize"><?php echo $row['4'];?></td>
                                             <td>Property Type :</td>
                                             <td class="text-capitalize"><?php echo $row['3'];?></td>
                                         </tr>
                                         <tr>
-                                            <td>Floor :</td>
+                                            <td> :</td>
                                             <td class="text-capitalize"><?php echo $row['11'];?></td>
-                                            <td>Total Floor :</td>
+                                            <td></td>
                                             <td class="text-capitalize"><?php echo $row['28'];?></td>
                                         </tr>
                                         <tr>
@@ -167,21 +158,17 @@ include("config.php");
                                     </tbody>
                                 </table>
                             </div>
-                            <h5 class="mt-5 mb-4 text-secondary">Features</h5>
+                            <h5 class="mt-5 mb-4 text-secondary"></h5>
                             <div class="row">
 								<?php echo $row['17'];?>
 								
                             </div>   
 							
-                            <h5 class="mt-5 mb-4 text-secondary">Floor Plans</h5>
                             <div class="accordion" id="accordionExample">
-                                <button class="bg-gray hover-bg-primary hover-text-white text-ordinary py-3 px-4 mb-1 w-100 text-left rounded position-relative" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Floor Plans </button>
                                 <div id="collapseOne" class="collapse show p-4" aria-labelledby="headingOne" data-parent="#accordionExample">
                                     <img src="admin/property/<?php echo $row['25'];?>" alt="Not Available"> </div>
-                                <button class="bg-gray hover-bg-primary hover-text-white text-ordinary py-3 px-4 mb-1 w-100 text-left rounded position-relative collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Basement Floor</button>
                                 <div id="collapseTwo" class="collapse p-4" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                     <img src="admin/property/<?php echo $row['26'];?>" alt="Not Available"> </div>
-                                <button class="bg-gray hover-bg-primary hover-text-white text-ordinary py-3 px-4 mb-1 w-100 text-left rounded position-relative collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Ground Floor</button>
                                 <div id="collapseThree" class="collapse p-4" aria-labelledby="headingThree" data-parent="#accordionExample">
                                     <img src="admin/property/<?php echo $row['27'];?>" alt="Not Available"> </div>
                             </div>
@@ -280,14 +267,14 @@ include("config.php");
 								
                                 <div class="col-md-12">
                                     <div class="form-group mt-4">
-                                        <button type="submit" class="btn btn-primary w-100">Search Property</button>
+                                        <button type="submit" class="btn btn-primary w-100">Search Asset</button>
                                     </div>
                                 </div>
                             </div>
                         </form>
                         <h4 class="double-down-line-left text-secondary position-relative pb-4 my-4">Instalment Calculator</h4>
                         <form class="d-inline-block w-100" action="calc.php" method="post">
-                            <label class="sr-only">Property Amount</label>
+                            <label class="sr-only">Asset Amount</label>
                             <div class="input-group mb-2 mr-sm-2">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">kshs</div>
@@ -310,10 +297,10 @@ include("config.php");
                             </div>
                             <button type="submit" value="submit" name="calc" class="btn btn-primary mt-4">calculate Instalment</button>
                         </form>
-                        <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4 mt-5">Featured Property</h4>
+                        <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4 mt-5">Featured Asset</h4>
 
                         <div class="sidebar-widget mt-5">
-                            <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Recent Property Add</h4>
+                            <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Recent Asset Add</h4>
                             <ul class="property_list_widget">
 							
 								<?php 

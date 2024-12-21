@@ -64,35 +64,28 @@ include("config.php");
                     <div class="col-lg-12">
                         <div class="text-white">
                             <h1 class="mb-4"><span class="text-primary">Find</span><br>
-                                Your Property</h1>
+                                Your Asset</h1>
                             <form method="post" action="propertygrid.php">
                                 <div class="row">
                                     <div class="col-md-6 col-lg-2">
                                         <div class="form-group">
                                             <select class="form-control" name="type">
-                                                <option value="">Select Property Type</option>
-<<<<<<< HEAD
-												<option value="apartment">Apartment</option>
-												<option value="flat">Flat</option>
-												<option value="bungalow">Bungalow</option>
-=======
-												<option value="appartment">Apartment</option>
-												<option value="flat">Flat</option>
-												<option value="bunglow">Bungalow</option>
->>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
-												<option value="house">House</option>
-												<option value="villa">Villa</option>
-												<option value="office">Office</option>
+                                                <option value="">Select Asset Type</option>
+												<option value="appartment">AutoTruck</option>
+												<option value="flat">Tractor</option>
+												<option value="bunglow">Implements</option>
+												<option value="Spares">Spare</option>
+												
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-lg-2">
                                         <div class="form-group">
                                             <select class="form-control" name="stype">
-                                                <option value="">Type of purchase</option>
-												<option value="rent">Rent</option>
-												<option value="sale">Sale</option>
-                                                <option value="sale">Lease</option>
+                                                <option value="">Type of Purchase</option>
+												<option value="rent">Buy</option>
+												<option value="sale">Sell</option>
+                                                <option value="sale">Hire</option>
                                             </select>
                                         </div>
                                     </div>
@@ -103,7 +96,7 @@ include("config.php");
                                     </div>
                                     <div class="col-md-4 col-lg-2">
                                         <div class="form-group">
-                                            <button type="submit" name="filter" class="btn btn-primary w-100">Search Property</button>
+                                            <button type="submit" name="filter" class="btn btn-primary w-100">Search Asset</button>
                                         </div>
                                     </div>
                                 </div>
@@ -135,21 +128,21 @@ include("config.php");
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
 								<i class="flaticon-for-rent text-primary flat-medium" aria-hidden="true"></i>
-                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">For Rent</a></h5>
+                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">For Purchase</a></h5>
                                 <p></p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
 								<i class="flaticon-list text-primary flat-medium" aria-hidden="true"></i>
-                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">For Lease</a></h5>
+                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">For Hire</a></h5>
                                 <p></p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
 								<i class="flaticon-diagram text-primary flat-medium" aria-hidden="true"></i>
-                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Property Searches & Legal Issues</a></h5>
+                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Asset Searches & Legal Issues</a></h5>
                                 <p></p>
                             </div>
                         </div>
@@ -164,7 +157,7 @@ include("config.php");
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="text-secondary double-down-line text-center mb-4">Recent Property Listings</h2>
+                        <h2 class="text-secondary double-down-line text-center mb-4">Recent Asset Listings</h2>
                     </div>
                     <!--- <div class="col-md-6">
                         <ul class="nav property-btn float-right" id="pills-tab" role="tablist">
@@ -251,7 +244,7 @@ include("config.php");
                                 <li class="mb-4 text-white d-flex"> 
 									<i class="flaticon-seller flat-medium float-left d-table mr-4 text-primary" aria-hidden="true"></i>
 									<div class="pl-2">
-										<h5 class="mb-3">Schools, Amenities etc</h5>
+										<h5 class="mb-3">Dealerships</h5>
 										<p>Call Us</p>
 									</div>
                                 </li>
@@ -268,7 +261,7 @@ include("config.php");
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-secondary double-down-line text-center mb-5">Property Journey</h2>
+                        <h2 class="text-secondary double-down-line text-center mb-5">Asset Acquisition</h2>
                         </div>
                 </div>
                 <div class="row">
@@ -333,7 +326,7 @@ include("config.php");
 												$total = $row[0];
 												echo $total;?>">0</div>
 								<?php } ?>
-                                <div class="text-white h5">Properties for Sale</div>
+                                <div class="text-white h5">Assets</div> for Sale</div>
                             </div>
                         </div>
 						<div class="col-md-3">
@@ -347,7 +340,7 @@ include("config.php");
 												$total = $row[0];
 												echo $total;?>">0</div>
 								<?php } ?>
-                                <div class="text-white h5">Properties for Rent</div>
+                                <div class="text-white h5">Assets for Hire</div>
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -375,7 +368,7 @@ include("config.php");
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-secondary double-down-line text-center mb-5">Popular Property Locations</h2></div>
+                        <h2 class="text-secondary double-down-line text-center mb-5">Popular Asset Locations</h2></div>
                 </div>
                 <div class="col-lg-12">
                     <div class="row">
@@ -390,7 +383,7 @@ include("config.php");
                                     <h4 class="hover-text-primary text-capitalize"><a href="stateproperty.php?id=<?php echo $row['17']?>"><?php echo $row['state'];?></a></h4>
                                     <span><?php 
 												$total = $row[0];
-												echo $total;?> Properties Listed</span> </div>
+												echo $total;?> Assets Listed</span> </div>
 									<?php } ?>
                             </div>
                         </div>
@@ -405,7 +398,7 @@ include("config.php");
                                     <h4 class="hover-text-primary text-capitalize"><a href="stateproperty.php?id=<?php echo $row['17']?>"><?php echo $row['state'];?></a></h4>
                                     <span><?php 
 												$total = $row[0];
-												echo $total;?> Properties Listed</span> </div>
+												echo $total;?> Assets Listed</span> </div>
 									<?php } ?>
                             </div>
                         </div>
@@ -420,7 +413,7 @@ include("config.php");
                                     <h4 class="hover-text-primary text-capitalize"><a href="stateproperty.php?id=<?php echo $row['17']?>"><?php echo $row['state'];?></a></h4>
                                     <span><?php 
 												$total = $row[0];
-												echo $total;?> Properties Listed</span> </div>
+												echo $total;?> Assets Listed</span> </div>
 									<?php } ?>
                             </div>
                         </div>
@@ -435,7 +428,7 @@ include("config.php");
                                     <h4 class="hover-text-primary text-capitalize"><a href="stateproperty.php?id=<?php echo $row['17']?>"><?php echo $row['state'];?></a></h4>
                                     <span><?php 
 												$total = $row[0];
-												echo $total;?> Properties Listed</span> </div>
+												echo $total;?> Assets Listed</span> </div>
 									<?php } ?>
                             </div>
                         </div>

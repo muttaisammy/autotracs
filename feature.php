@@ -99,7 +99,7 @@ if(!isset($_SESSION['uemail']))
 					<table class="items-list col-lg-12" style="border-collapse:inherit;">
                         <thead>
                              <tr  class="bg-primary">
-                                <th class="text-white font-weight-bolder">Properties</th>
+                                <th class="text-white font-weight-bolder">Assets</th>
                                 <th class="text-white font-weight-bolder">BHK</th>
                                 <th class="text-white font-weight-bolder">Reason</th>
                                 <th class="text-white font-weight-bolder">Added Date</th>

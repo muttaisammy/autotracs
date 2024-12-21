@@ -40,7 +40,7 @@ include("config.php");
 
 <!--	Title
 	=========================================================-->
-<title>Kenya Real Estate</title>
+<title>Kenya AutoTrucks For Sale</title>
 </head>
 <body>
 
@@ -113,7 +113,7 @@ include("config.php");
                                             <span class="location text-capitalize"><i class="fas fa-map-marker-alt text-primary"></i> <?php echo $row['14'];?></span> </div>
                                         <div class="px-4 pb-4 d-inline-block w-100">
                                             <div class="float-left text-capitalize"><i class="fas fa-user text-primary mr-1"></i>By : <?php echo $row['uname'];?></div>
-                                            <div class="float-right"><i class="far fa-calendar-alt text-primary mr-1"></i> 6 Months Ago</div>
+                                            <div class="float-right"><i class="far fa-calendar-alt text-primary mr-1"></i> 1 Months Ago</div>
                                         </div>
                                     </div>
                                 </div>
@@ -121,21 +121,7 @@ include("config.php");
                             <?php } ?>
                             
 
-                            
-                            
-                        <!--    <div class="col-md-12">
-                                <nav aria-label="Page navigation">
-                                    <ul class="pagination justify-content-center mt-4">
-                                        <li class="page-item disabled"> <span class="page-link">Previous</span> </li>
-                                        <li class="page-item active" aria-current="page"> <span class="page-link"> 1 <span class="sr-only">(current)</span> </span> </li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">...</li>
-                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                        <li class="page-item"> <a class="page-link" href="#">Next</a> </li>
-                                    </ul>
-                                </nav>
-                            </div>  -->
+                       
                         </div>
                     </div>
 					
@@ -164,16 +150,12 @@ include("config.php");
                                 </div>
                                 <input type="text" class="form-control" name="interest" placeholder="Interest Rate">
                             </div>
-<<<<<<< HEAD
-                            <button type="submit" value="submit" name="calc" class="btn btn-primary mt-4">calculate Instalment</button>
-=======
                             <button type="submit" value="submit" name="calc" class="btn btn-primary mt-4">Calclute Instalment</button>
->>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
                         </form>
                         </div>
                         
                         <div class="sidebar-widget mt-5">
-                            <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Recent Property Add</h4>
+                            <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Recent Asset Add</h4>
                             <ul class="property_list_widget">
 							
 								<?php 

@@ -182,16 +182,10 @@ if(isset($_POST['add']))
 													<div class="col-lg-9">
 														<select class="form-control" required name="ptype">
 															<option value="">Select Type</option>
-<<<<<<< HEAD
-															<option value="apartment">Apartment</option>
-															<option value="flat">Flat</option>
-															<option value="bungalow">Bungalow</option>
-=======
 															<option value="appartment">Appartment</option>
-															<option value="flat">Flat</option>
+															<option value="Tractor">Tractor</option>
 															<option value="bunglow">Bunglow</option>
->>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
-															<option value="house">House</option>
+															<option value="Spares">Spares</option>
 															<option value="villa">Villa</option>
 															<option value="office">Office</option>
 														</select>
