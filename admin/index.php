@@ -159,14 +159,7 @@ include("config.php");
                     <div class="col-md-12">
                         <h2 class="text-secondary double-down-line text-center mb-4">Recent Asset Listings</h2>
                     </div>
-                    <!--- <div class="col-md-6">
-                        <ul class="nav property-btn float-right" id="pills-tab" role="tablist">
-                            <li class="nav-item"> <a class="nav-link py-3 active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">New</a> </li>
-                            <li class="nav-item"> <a class="nav-link py-3" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Featured</a> </li>
-                            <li class="nav-item"> <a class="nav-link py-3" id="pills-contact-tab2" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Top Sale</a> </li>
-                            <li class="nav-item"> <a class="nav-link py-3" id="pills-contact-tab3" data-toggle="pill" href="#pills-resturant" role="tab" aria-controls="pills-contact" aria-selected="false">Best Sale</a> </li>
-                        </ul>
-                    </div> --->
+                   
                     <div class="col-md-12">
                         <div class="tab-content mt-4" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home">
